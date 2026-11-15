@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VeloAxis builds technology solutions that help businesses communicate, manage customers and grow.">
+  <title>VeloAxis | Technology That Moves Business Forward</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292929;
+    }
+    .logo { font-size: 25px; font-weight: bold; letter-spacing: 2px; }
+    .logo span { color: #bfc3c7; }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 90px 10%;
+      background: radial-gradient(ellipse at 80% 20%, #292929, #080808 60%);
+    }
+    .eyebrow { color: #aaa; letter-spacing: 4px; font-size: 12px; }
+    h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1.1; margin: 22px 0; max-width: 850px; }
+    h1 span { color: #bfc3c7; }
+    .hero p { color: #aaa; max-width: 590px; font-size: 18px; }
+    .button {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 14px 25px;
+      background: #c0c0c0;
+      color: #080808;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+    section { padding: 75px 10%; }
+    .section-label { color: #999; letter-spacing: 3px; font-size: 12px; }
+    h2 { font-size: 34px; margin: 12px 0 18px; }
+    .intro { color: #aaa; max-width: 700px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      margin-top: 35px;
+    }
+    .card {
+      border: 1px solid #333;
+      padding: 25px;
+      background: #111;
+    }
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #999; font-size: 14px; }
+    .contact { background: #111; text-align: center; }
+    footer {
+      padding: 25px 10%;
+      color: #777;
+      border-top: 1px solid #292929;
+      font-size: 13px;
+    }
+    @media(max-width: 600px) {
+      nav a { margin-left: 10px; font-size: 12px; }
+      .logo { font-size: 20px; }
+      header { padding: 18px 5%; }
+      .hero { padding: 75px 7%; }
+      section { padding: 60px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VELO<span>AXIS</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">TECHNOLOGY • SOLUTIONS • GROWTH</div>
+      <h1>Technology that moves <span>business forward.</span></h1>
+      <p>We are building practical digital solutions that help businesses manage better, communicate smarter and grow with confidence.</p>
+      <a class="button" href="#solutions">Explore our vision</a>
+    </div>
+
+    <section id="about">
+      <div class="section-label">WHO WE ARE</div>
+      <h2>Building technology for a better way of doing business.</h2>
+      <p class="intro">VeloAxis is a technology company focused on software development, customer management, business communication and workflow automation. Our goal is to make everyday business operations simpler and more efficient.</p>
+    </section>
+
+    <section id="solutions">
+      <div class="section-label">OUR ECOSYSTEM</div>
+      <h2>Solutions built around business needs.</h2>
+      <p class="intro">Our planned technology ecosystem will bring useful digital tools together under one vision.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>VeloCRM</h3>
+          <p>Customer records, relationships and follow-up management. Our first product in development.</p>
+        </div>
+        <div class="card">
+          <h3>VeloSMS</h3>
+          <p>Business messaging and customer notifications.</p>
+        </div>
+        <div class="card">
+          <h3>VeloFlow</h3>
+          <p>Smarter workflows and business process automation.</p>
+        </div>
+        <div class="card">
+          <h3>VeloConnect</h3>
+          <p>Tools designed to improve business communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-label">LET'S CONNECT</div>
+      <h2>Let's move business forward.</h2>
+      <p class="intro">Have a business challenge or want to follow our progress? Get in touch with VeloAxis.</p>
+      <a class="button" href="mailto:hello@veloaxis.com.ng">Contact VeloAxis</a>
+    </section>
+  </main>
+
+  <footer>© 2026 VeloAxis. All rights reserved.</footer>
+</body>
+</html>
