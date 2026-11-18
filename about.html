@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a0c">
+
+  <title>About VeloAxis | Nigerian Technology Company</title>
+
+  <meta name="description" content="Discover VeloAxis, a Nigerian technology company building practical software, customer management, business communication and automation solutions.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://veloaxis.com.ng/about.html">
+
+  <link rel="icon" type="image/png" sizes="512x512" href="/veloaxis-favicon.png">
+  <link rel="icon" type="image/x-icon" href="/veloaxis-favicon.ico">
+  <link rel="apple-touch-icon" href="/veloaxis-favicon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About VeloAxis | Useful Technology. Real-World Impact.">
+  <meta property="og:description" content="Learn about VeloAxis, our mission, leadership and practical technology solutions for businesses.">
+  <meta property="og:url" content="https://veloaxis.com.ng/about.html">
+  <meta property="og:image" content="https://veloaxis.com.ng/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About VeloAxis">
+  <meta name="twitter:description" content="A Nigerian technology company building useful digital solutions.">
+  <meta name="twitter:image" content="https://veloaxis.com.ng/og-image.png">
+
+  <style>
+    :root {
+      --bg: #090a0c;
+      --panel: #111317;
+      --silver: #c8cdd4;
+      --muted: #9ba2ad;
+      --white: #f4f6f8;
+      --line: rgba(210,218,228,.14);
+      --max: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: auto;
+    }
+
+    .topline {
+      height: 3px;
+      background: linear-gradient(90deg, #555d68, #f2f4f7, #6b737e);
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #090a0c;
+    }
+
+    .nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+    }
+
+    .brand span {
+      color: var(--silver);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      color: #c2c7cf;
+      font-size: .92rem;
+    }
+
+    .navlinks a:hover {
+      color: white;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #cbd1d9;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #f1f3f5, #aeb5bf);
+      color: #111318;
+      font-weight: 750;
+      font-size: .9rem;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: white;
+      border-color: #69717d;
+    }
+
+    .hero {
+      padding: 100px 0 90px;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(160,171,188,.15), transparent 35%),
+        linear-gradient(135deg, #0a0b0d, #101318 55%, #090a0c);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: #aeb7c2;
+      letter-spacing: .2em;
+      font-size: .74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1.08;
+      letter-spacing: -.05em;
+      margin: 20px 0;
+      max-width: 850px;
+    }
+
+    h1 span {
+      color: #b9c0ca;
+    }
+
+    .hero p {
+      color: #b5bbc4;
+      max-width: 720px;
+      font-size: 1.08rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-label {
+      color: #aeb7c2;
+      letter-spacing: .2em;
+      font-size: .74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -.04em;
+      margin: 12px 0 18px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 780px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .split p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid #30343b;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #171a1f, #101215);
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .principles {
+      display: grid;
+      gap: 15px;
+    }
+
+    .principle {
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .principle strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .principle span {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .founder {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: linear-gradient(125deg, #171a1f, #0e1013);
+      margin-top: 25px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #727b88;
+      border-radius: 30px;
+      padding: 5px 11px;
+      color: #d4d9e0;
+      font-size: .7rem;
+      font-weight: 750;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .contact-panel {
+      padding: 36px;
+      border-radius: 10px;
+      background: linear-gradient(120deg, #d9dde3, #aeb6c1);
+      color: #111318;
+    }
+
+    .contact-panel p {
+      margin: 10px 0 20px;
+      color: #303640;
+    }
+
+    .contact-panel a {
+      font-weight: 750;
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: #929aa5;
+      font-size: .84rem;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .foot strong {
+      color: #e7eaee;
+      letter-spacing: .12em;
+    }
+
+    @media(max-width: 750px) {
+      .navlinks {
+        gap: 13px;
+        font-size: .82rem;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+    }
+
+    @media(max-width: 520px) {
+      .wrap {
+        width: calc(100% - 30px);
+      }
+
+      .nav {
+        min-height: 65px;
+      }
+
+      .navlinks {
+        gap: 10px;
+        font-size: .75rem;
+      }
+
+      .navlinks a:nth-child(3) {
+        display: none;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .founder,
+      .contact-panel {
+        padding: 24px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://veloaxis.com.ng/#organization",
+        "name": "VeloAxis",
+        "url": "https://veloaxis.com.ng/",
+        "description": "VeloAxis is a Nigerian technology company focused on software development, customer management, business communication and automation.",
+        "email": "velosmstexthub@gmail.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Anadi Philips Onyekachi",
+          "jobTitle": "Founder and CEO"
+        },
+        "knowsAbout": [
+          "Software development",
+          "Customer relationship management",
+          "Business communication",
+          "Business automation",
+          "Digital business solutions"
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://veloaxis.com.ng/about.html#webpage",
+        "url": "https://veloaxis.com.ng/about.html",
+        "name": "About VeloAxis",
+        "description": "Learn about VeloAxis, its mission, leadership and technology solutions.",
+        "about": {
+          "@id": "https://veloaxis.com.ng/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topline"></div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="VeloAxis home">
+        VELO<span>AXIS</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/#solutions">Solutions</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">About VeloAxis · Nigeria</div>
+
+        <h1>
+          Useful technology.<br>
+          <span>Real-world impact.</span>
+        </h1>
+
+        <p>
+          VeloAxis is a Nigerian technology company focused on building
+          practical digital solutions that help businesses operate more
+          efficiently, manage customer relationships and communicate better.
+        </p>
+
+        <div class="actions">
+          <a class="button" href="/#solutions">Explore our solutions</a>
+          <a class="button secondary" href="/#contact">Contact VeloAxis</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <div class="section-label">Who we are</div>
+          <h2>Technology built around real business needs.</h2>
+
+          <p>
+            VeloAxis is being developed as a technology brand with a clear
+            focus: making everyday business operations simpler through
+            useful software and digital tools.
+          </p>
+
+          <p>
+            We focus on software development, customer management,
+            business communication and automation. Our approach begins
+            with understanding practical challenges and building solutions
+            that can make a meaningful difference.
+          </p>
+
+          <p>
+            We believe technology should be useful, accessible and designed
+            to solve problems people and businesses actually experience.
+          </p>
+        </div>
+
+        <div class="principles">
+          <div class="principle">
+            <strong>Our identity</strong>
+            <span>
+              A Nigerian technology brand building practical digital
+              solutions for businesses.
+            </span>
+          </div>
+
+          <div class="principle">
+            <strong>Our focus</strong>
+            <span>
+              Software development, communication, customer management
+              and business automation.
+            </span>
+          </div>
+
+          <div class="principle">
+            <strong>Our approach</strong>
+            <span>
+              Understand real problems, build useful solutions and improve
+              them through learning and feedback.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-label">Our mission and vision</div>
+        <h2>Why VeloAxis exists.</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Our mission</h3>
+            <p>
+              To build practical technology solutions that simplify business
+              operations, improve customer relationships and make everyday
+              work more efficient.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Our vision</h3>
+            <p>
+              To grow into a trusted technology company creating useful
+              digital products that help businesses and people move forward.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Our values</h3>
+            <p>
+              Practical innovation, continuous learning, responsible
+              development, customer focus and meaningful impact.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-label">Our first product</div>
+        <h2>Turning our vision into useful products.</h2>
+
+        <div class="founder">
+          <span class="tag">Available</span>
+          <h3 style="font-size:2rem;margin-top:14px;">VeloCRM</h3>
+
+          <p class="intro">
+            VeloCRM is our first available product. It is designed to help
+            businesses organise customer information, manage customer
+            relationships, record interactions and keep track of follow-ups.
+          </p>
+
+          <div class="actions">
+            <a class="button" href="https://velosmstexthub-prog.github.io/velocrm-app-/"
+               target="_blank" rel="noopener noreferrer">
+              Explore VeloCRM ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-label">The road ahead</div>
+        <h2>Building a connected technology ecosystem.</h2>
+
+        <p class="intro">
+          VeloAxis intends to expand its ecosystem through additional
+          digital products. These are development directions, not claims
+          that the products are already available.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Business communication</h3>
+            <p>Tools for better customer messaging and business engagement.</p>
+          </article>
+
+          <article class="card">
+            <h3>Workflow automation</h3>
+            <p>Solutions designed to reduce repetitive tasks and improve processes.</p>
+          </article>
+
+          <article class="card">
+            <h3>Business management</h3>
+            <p>Digital tools for organising orders, inventory and customer support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-label">Leadership</div>
+        <h2>The person behind the vision.</h2>
+
+        <div class="founder">
+          <span class="tag">Founder &amp; CEO</span>
+          <h3 style="font-size:1.7rem;margin-top:14px;">
+            Anadi Philips Onyekachi
+          </h3>
+
+          <p class="intro">
+            Founder of VeloAxis, working to build a technology company
+            focused on practical software, better business communication,
+            customer management and automation.
+          </p>
+
+          <p style="color:#aeb7c2;margin-top:15px;">
+            Building useful technology. Creating real-world impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="contact-panel">
+          <h2>Let's move business forward.</h2>
+
+          <p>
+            Interested in VeloAxis, our products or a potential partnership?
+            Get in touch with us.
+          </p>
+
+          <p>
+            Official email:
+            <a href="mailto:velosmstexthub@gmail.com">
+              velosmstexthub@gmail.com
+            </a>
+          </p>
+
+          <a class="button" href="mailto:velosmstexthub@gmail.com">
+            Contact VeloAxis ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong>VELOAXIS</strong>
+        <div>Useful technology. Real-world impact.</div>
+      </div>
+
+      <div>
+        © 2026 VeloAxis. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+  </html>
+  
