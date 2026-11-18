@@ -1,270 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VeloAxis builds technology solutions for customer management, communication, automation and business growth.">
-  <title>VeloAxis | Technology That Moves Business Forward</title>
+  <meta name="theme-color" content="#090a0c">
+  <title>VeloAxis | Useful Technology. Real-World Impact.</title>
+  <meta name="description" content="VeloAxis builds practical technology solutions for customer management, business communication, automation and business growth. Explore VeloCRM, our first available product.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://veloaxis.com.ng/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VeloAxis | Useful Technology. Real-World Impact.">
+  <meta property="og:description" content="Practical digital solutions for better business operations, communication and customer relationships.">
+  <meta property="og:url" content="https://veloaxis.com.ng/">
+  <meta name="twitter:card" content="summary">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: #080808;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #292929;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    .logo span { color: #bfc3c7; }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin-left: 22px;
-      font-size: 14px;
-    }
-
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 90px 10%;
-      background: radial-gradient(ellipse at 80% 20%, #292929, #080808 60%);
-    }
-
-    .eyebrow {
-      color: #aaa;
-      letter-spacing: 4px;
-      font-size: 12px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 8vw, 76px);
-      line-height: 1.1;
-      margin: 22px 0;
-      max-width: 850px;
-    }
-
-    h1 span { color: #bfc3c7; }
-
-    .hero p {
-      color: #aaa;
-      max-width: 590px;
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 32px;
-      padding: 14px 25px;
-      background: #c0c0c0;
-      color: #080808;
-      text-decoration: none;
-      font-weight: bold;
-      width: fit-content;
-    }
-
-    section { padding: 75px 10%; }
-
-    .section-label {
-      color: #999;
-      letter-spacing: 3px;
-      font-size: 12px;
-    }
-
-    h2 {
-      font-size: 34px;
-      margin: 12px 0 18px;
-    }
-
-    .intro {
-      color: #aaa;
-      max-width: 700px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 18px;
-      margin-top: 35px;
-    }
-
-    .card {
-      border: 1px solid #333;
-      padding: 25px;
-      background: #111;
-      transition: border-color 0.3s, transform 0.3s;
-    }
-
-    .card:hover {
-      border-color: #bfc3c7;
-      transform: translateY(-4px);
-    }
-
-    .card h3 { margin-bottom: 10px; }
-
-    .card p {
-      color: #999;
-      font-size: 14px;
-    }
-
-    .status {
-      display: inline-block;
-      margin-bottom: 13px;
-      padding: 4px 9px;
-      border: 1px solid #555;
-      color: #c0c0c0;
-      font-size: 10px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .contact {
-      background: #111;
-      text-align: center;
-    }
-
-    .contact .intro {
-      margin: 0 auto;
-    }
-
-    .contact .button {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    footer {
-      padding: 25px 10%;
-      color: #777;
-      border-top: 1px solid #292929;
-      font-size: 13px;
-    }
-
-    @media(max-width: 600px) {
-      nav a {
-        margin-left: 10px;
-        font-size: 12px;
-      }
-
-      .logo { font-size: 20px; }
-
-      header { padding: 18px 5%; }
-
-      .hero { padding: 75px 7%; }
-
-      section { padding: 60px 7%; }
-
-      h2 { font-size: 28px; }
-    }
+    :root{--bg:#090a0c;--panel:#111317;--panel2:#171a1f;--silver:#c8cdd4;--muted:#9ba2ad;--white:#f4f6f8;--line:rgba(210,218,228,.14);--max:1160px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,#555d68,#f2f4f7,#6b737e)}
+    header{position:sticky;top:0;z-index:10;background:rgba(9,10,12,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-size:1.35rem;font-weight:850;letter-spacing:.12em}
+    .brand span{color:var(--silver)}
+    .navlinks{display:flex;align-items:center;gap:25px;color:#c2c7cf;font-size:.92rem}
+    .navlinks a:hover{color:#fff}
+    .navcta,.button{display:inline-flex;align-items:center;justify-content:center;border:1px solid #cbd1d9;background:linear-gradient(135deg,#f1f3f5,#aeb5bf);color:#111318;padding:11px 18px;border-radius:5px;font-weight:750;font-size:.9rem;transition:.2s}
+    .navcta:hover,.button:hover{transform:translateY(-2px);filter:brightness(1.07)}
+    .button.secondary{background:transparent;color:#eef0f3;border-color:#69717d}
+    .menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:5px;padding:8px 11px;font-size:1.1rem}
+    .hero{min-height:570px;display:flex;align-items:center;position:relative;overflow:hidden;padding:95px 0;background:radial-gradient(ellipse at 80% 20%,rgba(160,171,188,.15),transparent 35%),linear-gradient(135deg,#0a0b0d,#101318 55%,#090a0c)}
+    .hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(210,218,228,.09);border-radius:50%;right:-130px;top:40px;box-shadow:0 0 0 45px rgba(210,218,228,.018),0 0 0 90px rgba(210,218,228,.014);pointer-events:none}
+    .eyebrow,.section-label{color:#aeb7c2;letter-spacing:.2em;font-size:.74rem;font-weight:800;text-transform:uppercase}
+    h1{font-size:clamp(2.65rem,6vw,5.1rem);line-height:1.05;letter-spacing:-.05em;max-width:850px;margin:20px 0}
+    h1 span{color:#b9c0ca}
+    .hero p{color:#b5bbc4;max-width:660px;font-size:1.08rem}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:29px}
+    .hero-note{margin-top:48px;color:#8f97a3;font-size:.8rem;letter-spacing:.08em}
+    section{padding:82px 0}
+    .section-head{max-width:740px;margin-bottom:32px}
+    h2{font-size:clamp(2rem,4vw,3rem);line-height:1.13;letter-spacing:-.04em;margin:12px 0 16px}
+    .intro,.section-head p{color:var(--muted);max-width:730px}
+    .product{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center;padding:35px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(125deg,#171a1f,#0e1013)}
+    .product h3{font-size:2.15rem;letter-spacing:-.04em;margin:12px 0}
+    .product p{color:var(--muted);margin:0 0 14px}
+    .tag,.status{display:inline-block;border:1px solid #727b88;color:#d4d9e0;border-radius:30px;padding:5px 10px;font-size:.69rem;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
+    .product-preview{border:1px solid rgba(220,226,234,.2);background:#0b0d10;border-radius:9px;padding:21px}
+    .preview-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:14px;font-weight:800;letter-spacing:.08em}
+    .preview-row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid rgba(210,218,228,.08);font-size:.87rem;color:#bfc5ce}
+    .preview-row strong{color:#f0f2f5}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+    .card{border:1px solid #30343b;padding:23px;background:linear-gradient(145deg,#171a1f,#101215);border-radius:8px;transition:border-color .25s,transform .25s}
+    .card:hover{border-color:#aeb7c2;transform:translateY(-3px)}
+    .card h3{font-size:1.16rem;margin:10px 0 7px}
+    .card p{color:var(--muted);font-size:.91rem}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .split p{color:var(--muted);margin:0 0 13px}
+    .principles{display:grid;gap:12px}
+    .principle{padding:16px 0;border-bottom:1px solid var(--line)}
+    .principle strong{display:block;margin-bottom:4px}
+    .principle span{color:var(--muted);font-size:.91rem}
+    .contact-panel{background:linear-gradient(120deg,#d9dde3,#aeb6c1);color:#111318;border-radius:10px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .contact-panel h2{margin:0 0 9px}
+    .contact-panel p{color:#303640;max-width:650px}
+    .contact-panel .button{background:#101318;color:#f4f6f8;border-color:#101318;white-space:nowrap}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:#929aa5;font-size:.84rem}
+    .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .foot strong{color:#e7eaee;letter-spacing:.12em}
+    @media(max-width:800px){.navlinks{display:none;position:absolute;top:74px;left:0;right:0;padding:18px 22px 22px;background:#0c0e11;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}.navlinks.open{display:flex}.menu{display:block}.navcta{display:none}.hero{min-height:unset;padding:82px 0}.cards{grid-template-columns:repeat(2,1fr)}.product,.split{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){.wrap{width:calc(100% - 30px)}section{padding:64px 0}.cards{grid-template-columns:1fr}.card{padding:21px}.hero p{font-size:1rem}.hero-note{font-size:.7rem;line-height:1.8}.product{padding:23px}.contact-panel{padding:27px}}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"VeloAxis",
+    "url":"https://veloaxis.com.ng/",
+    "description":"VeloAxis builds practical technology solutions for customer management, business communication, software and automation.",
+    "knowsAbout":["Software development","Customer relationship management","Business communication","Business automation","Social media content management"]
+  }
+  </script>
 </head>
-
 <body>
+  <div class="topline"></div>
   <header>
-    <div class="logo">VELO<span>AXIS</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="VeloAxis home">VELO<span>AXIS</span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#roadmap">Our direction</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="navcta" href="#solutions">Explore VeloAxis</a>
+      <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
   </header>
 
   <main>
-    <div class="hero">
-      <div class="eyebrow">TECHNOLOGY • SOLUTIONS • GROWTH</div>
-      <h1>Technology that moves <span>business forward.</span></h1>
-      <p>We are building practical digital solutions that help businesses manage better, communicate smarter and grow with confidence.</p>
-      <a class="button" href="#solutions">Explore our ecosystem</a>
-    </div>
-
-    <section id="about">
-      <div class="section-label">WHO WE ARE</div>
-      <h2>Building technology for a better way of doing business.</h2>
-      <p class="intro">VeloAxis is a technology company focused on software development, customer management, business communication and workflow automation. Our goal is to make everyday business operations simpler and more efficient.</p>
-    </section>
-
-    <section id="solutions">
-      <div class="section-label">OUR ECOSYSTEM</div>
-      <h2>Eight solutions. One technology vision.</h2>
-      <p class="intro">We are building a connected technology ecosystem designed to help businesses manage customers, communicate, organise operations and grow.</p>
-
-      <div class="cards">
-
-        <div class="card">
-          <span class="status">In Development</span>
-          <h3>VeloCRM</h3>
-          <p>Customer records, relationship management, interaction tracking and follow-up reminders.</p>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Technology · Solutions · Growth</div>
+        <h1>Useful technology.<br><span>Real-world impact.</span></h1>
+        <p>VeloAxis is building practical digital solutions that help businesses manage better, communicate smarter, organise their operations and grow with confidence.</p>
+        <div class="actions">
+          <a class="button" href="#solutions">Explore our ecosystem</a>
+          <a class="button secondary" href="#about">Discover VeloAxis</a>
         </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloSMS</h3>
-          <p>Business messaging, bulk SMS and customer notifications.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloFlow</h3>
-          <p>Workflow automation and smarter business process management.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloConnect</h3>
-          <p>Digital tools designed to improve business communication and customer engagement.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloOrders</h3>
-          <p>Order management tools to help businesses organise, track and manage customer orders.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloStock</h3>
-          <p>Inventory management solutions for monitoring products, stock levels and business supplies.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloDesk</h3>
-          <p>Customer support tools for managing enquiries, service requests and customer assistance.</p>
-        </div>
-
-        <div class="card">
-          <span class="status">Planned</span>
-          <h3>VeloRide</h3>
-          <p>Delivery and dispatch connections designed to support business order fulfilment.</p>
-        </div>
-
+        <div class="hero-note">SOFTWARE DEVELOPMENT · COMMUNICATION · CUSTOMER MANAGEMENT · AUTOMATION</div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="section-label">LET'S CONNECT</div>
-      <h2>Let's move business forward.</h2>
-      <p class="intro">Have a business challenge or want to follow our progress? Get in touch with VeloAxis.</p>
-      <a class="button" href="mailto:hello@veloaxis.com.ng">Contact VeloAxis</a>
+    <section id="solutions">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Our ecosystem</div>
+          <h2>One technology vision. Solutions built for real needs.</h2>
+          <p>VeloAxis is developing a connected ecosystem of digital products. VeloCRM is our first available product; other solutions will be introduced as they are developed and ready for customers.</p>
+        </div>
+
+        <div class="product">
+          <div>
+            <span class="tag">Available · First product</span>
+            <h3>VeloCRM</h3>
+            <p>Customer relationship management that helps businesses organise customer records, track conversations, record interactions and stay on top of follow-ups.</p>
+            <p>Keep important customer information and interactions in one organised place, so relationships don't get lost in the daily rush.</p>
+            <a class="button" href="https://velosmstexthub-prog.github.io/velocrm-app-/" target="_blank" rel="noopener noreferrer">Open VeloCRM ↗</a>
+          </div>
+          <div class="product-preview" aria-label="Illustrative VeloCRM feature preview">
+            <div class="preview-head"><span>VELO<span style="color:#aeb6c1">CRM</span></span><span class="tag">Customer workspace</span></div>
+            <div class="preview-row"><span>Customer records</span><strong>Organised</strong></div>
+            <div class="preview-row"><span>Interaction history</span><strong>Recorded</strong></div>
+            <div class="preview-row"><span>Follow-up reminders</span><strong>Tracked</strong></div>
+            <div class="preview-row"><span>Customer insights</span><strong>Accessible</strong></div>
+            <p style="font-size:.75rem;color:#7f8996;margin:15px 0 0">Illustrative overview of VeloCRM capabilities.</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card"><span class="status">Planned</span><h3>VeloSMS</h3><p>Business messaging, bulk SMS and customer notifications.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloFlow</h3><p>Workflow automation and smarter business process management.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloConnect</h3><p>Digital tools designed to improve business communication and customer engagement.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloOrders</h3><p>Order management tools to help businesses organise, track and manage customer orders.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloStock</h3><p>Inventory management solutions for monitoring products, stock levels and supplies.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloDesk</h3><p>Customer support tools for managing enquiries, service requests and assistance.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloRide</h3><p>Delivery and dispatch connections designed to support business order fulfilment.</p></article>
+          <article class="card"><span class="status">Planned</span><h3>VeloSocial</h3><p>Business promotion management to prepare, organise and share content across supported social platforms with less daily effort.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div>
+          <div class="section-label">Who we are</div>
+          <h2>Building technology for a better way of doing business.</h2>
+          <p>VeloAxis is a technology brand focused on software development, customer management, business communication and workflow automation. Our goal is to make everyday business operations simpler and more efficient.</p>
+          <p>We believe technology should solve practical problems, support stronger customer relationships and help businesses make better use of their time.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>Useful by design</strong><span>We focus on real needs and practical outcomes, not technology for its own sake.</span></div>
+          <div class="principle"><strong>Built to grow</strong><span>Our ecosystem will expand as new products are developed, tested and made ready.</span></div>
+          <div class="principle"><strong>People and businesses first</strong><span>We want our tools to make everyday work clearer, simpler and more connected.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">The road ahead</div>
+          <h2>More possibilities. One connected ecosystem.</h2>
+          <p>Our roadmap reflects the areas VeloAxis intends to develop. Planned products are not yet available, and we will update this page as they launch.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><span class="status">Future direction</span><h3>Business communication</h3><p>Helping businesses reach customers and maintain meaningful connections.</p></article>
+          <article class="card"><span class="status">Future direction</span><h3>Business automation</h3><p>Reducing repetitive tasks and making everyday processes more efficient.</p></article>
+          <article class="card"><span class="status">Future direction</span><h3>Social promotion</h3><p>Making it easier to prepare, organise and manage business content across supported platforms.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <h2>Let's move business forward.</h2>
+            <p>Interested in VeloAxis, our products or a potential partnership? We'd be glad to hear from you.</p>
+            <p class="contact-email">Email: <a href="mailto:velosmstexthub@gmail.com">velosmstexthub@gmail.com</a></p>
+          </div>
+          <div class="actions">
+            <a class="button" href="mailto:velosmstexthub@gmail.com">Contact VeloAxis ↗</a>
+            <a class="button secondary" href="https://velosmstexthub-prog.github.io/velocrm-app-/" target="_blank" rel="noopener noreferrer">Explore VeloCRM ↗</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>© 2026 VeloAxis. All rights reserved.</footer>
+  <footer>
+    <div class="wrap foot">
+      <div><strong>VELOAXIS</strong><div>Useful technology. Real-world impact.</div></div>
+      <div>© <span id="year">2026</span> VeloAxis. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navlinks = document.getElementById('navlinks');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navlinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-</html>
+  </html>
+  
