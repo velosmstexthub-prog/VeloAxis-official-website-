@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -149,7 +150,7 @@
     .principle span{color:var(--muted);font-size:.91rem}
 
     .founder-card{grid-template-columns:.85fr 1.15fr;align-items:center}
-    .founder-photo{width:100%;max-width:360px;aspect-ratio:4/5;object-fit:cover;object-position:center 35%;display:block;margin:0 auto;border:1px solid rgba(220,226,234,.2);border-radius:9px}
+    .founder-photo{width:100%;max-width:340px;height:auto;max-height:460px;object-fit:contain;display:block;margin:0 auto;border:1px solid rgba(220,226,234,.2);border-radius:9px;background:#090a0c}
     .founder-bio{color:var(--muted);margin-top:12px}
     .founder-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
     .founder-links a{color:#d4d9e0;text-decoration:underline;text-underline-offset:4px}
@@ -171,7 +172,7 @@
       .cards{grid-template-columns:repeat(2,1fr)}
       .product,.split{grid-template-columns:1fr}
       .founder-card{grid-template-columns:1fr}
-      .founder-photo{max-width:300px}
+      .founder-photo{max-width:280px;max-height:380px}
       .contact-panel{align-items:flex-start;flex-direction:column}
     }
 
@@ -398,4 +399,72 @@
         <div class="cards">
           <article class="card">
             <span class="status">Future direction</span>
-    
+            <h3>Business communication</h3>
+            <p>Helping businesses reach customers and maintain meaningful connections.</p>
+          </article>
+
+          <article class="card">
+            <span class="status">Future direction</span>
+            <h3>Business automation</h3>
+            <p>Reducing repetitive tasks and making everyday processes more efficient.</p>
+          </article>
+
+          <article class="card">
+            <span class="status">Future direction</span>
+            <h3>Social promotion</h3>
+            <p>Making it easier to prepare, organise and manage business content across supported platforms.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <h2>Let's move business forward.</h2>
+
+            <p>Interested in VeloAxis, our products or a potential partnership? We'd be glad to hear from you.</p>
+
+            <p class="contact-email">Email: <a href="mailto:velosmstexthub@gmail.com">velosmstexthub@gmail.com</a></p>
+          </div>
+
+          <div class="actions">
+            <a class="button" href="mailto:velosmstexthub@gmail.com">Contact VeloAxis ↗</a>
+
+            <a class="button secondary" href="https://velosmstexthub-prog.github.io/velocrm-app-/" target="_blank" rel="noopener noreferrer">Explore VeloCRM ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong>VELOAXIS</strong>
+        <div>Useful technology. Real-world impact.</div>
+      </div>
+
+      <div>© <span id="year">2026</span> VeloAxis. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navlinks = document.getElementById('navlinks');
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navlinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
