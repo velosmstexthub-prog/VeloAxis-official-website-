@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,9 +50,7 @@
         "description": "VeloAxis builds practical technology solutions for customer management, business communication, software development and automation.",
         "email": "velosmstexthub@gmail.com",
         "founder": {
-          "@type": "Person",
-          "name": "Anadi Philips Onyekachi",
-          "jobTitle": "Founder & CEO"
+          "@id": "https://veloaxis.com.ng/#founder"
         },
         "contactPoint": {
           "@type": "ContactPoint",
@@ -78,6 +75,24 @@
           "@id": "https://veloaxis.com.ng/#organization"
         },
         "inLanguage": "en"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://veloaxis.com.ng/#founder",
+        "name": "Anadi Philips Onyekachi",
+        "jobTitle": "Founder & CEO",
+        "description": "Anadi Philips Onyekachi is the Founder and CEO of VeloAxis, a technology company focused on building practical digital solutions that help businesses operate smarter, communicate better and grow efficiently. With an interest in technology, entrepreneurship and innovation, he is building VeloAxis around software development, business communication, customer management and automation. His vision is to make useful technology more accessible to businesses and create solutions that deliver real-world impact.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://veloaxis.com.ng/veloaxis-founder-anadi-philips-onyekachi.jpg"
+        },
+        "url": "https://veloaxis.com.ng/#leadership",
+        "sameAs": [
+          "https://www.linkedin.com/in/anadiphilips-onyekachi-0369a2450/"
+        ],
+        "worksFor": {
+          "@id": "https://veloaxis.com.ng/#organization"
+        }
       }
     ]
   }
@@ -132,6 +147,13 @@
     .principle{padding:16px 0;border-bottom:1px solid var(--line)}
     .principle strong{display:block;margin-bottom:4px}
     .principle span{color:var(--muted);font-size:.91rem}
+
+    .founder-card{grid-template-columns:.85fr 1.15fr;align-items:center}
+    .founder-photo{width:100%;max-width:360px;aspect-ratio:4/5;object-fit:cover;object-position:center 35%;display:block;margin:0 auto;border:1px solid rgba(220,226,234,.2);border-radius:9px}
+    .founder-bio{color:var(--muted);margin-top:12px}
+    .founder-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .founder-links a{color:#d4d9e0;text-decoration:underline;text-underline-offset:4px}
+
     .contact-panel{background:linear-gradient(120deg,#d9dde3,#aeb6c1);color:#111318;border-radius:10px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .contact-panel h2{margin:0 0 9px}
     .contact-panel p{color:#303640;max-width:650px}
@@ -148,6 +170,8 @@
       .hero{min-height:unset;padding:82px 0}
       .cards{grid-template-columns:repeat(2,1fr)}
       .product,.split{grid-template-columns:1fr}
+      .founder-card{grid-template-columns:1fr}
+      .founder-photo{max-width:300px}
       .contact-panel{align-items:flex-start;flex-direction:column}
     }
 
@@ -339,20 +363,23 @@
         <div class="product founder-card">
           <div>
             <span class="tag">Founder &amp; CEO</span>
-
             <h3>Anadi Philips Onyekachi</h3>
-
-            <p>Founder of VeloAxis, building a technology company focused on practical software, better business communication, customer management and automation.</p>
-          </div>
-
-          <div class="product-preview founder-note">
-            <div class="preview-head">
-              <span>VELO<span style="color:#aeb6c1">AXIS</span></span>
-              <span class="tag">Leadership</span>
+            <p class="founder-bio">Anadi Philips Onyekachi is the Founder and CEO of VeloAxis, a technology company focused on building practical digital solutions that help businesses operate smarter, communicate better and grow efficiently.</p>
+            <p class="founder-bio">With an interest in technology, entrepreneurship and innovation, he is building VeloAxis around software development, business communication, customer management and automation. His vision is to make useful technology more accessible to businesses and create solutions that deliver real-world impact.</p>
+            <div class="founder-links">
+              <a href="https://www.linkedin.com/in/anadiphilips-onyekachi-0369a2450/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>
             </div>
-
-            <p>Useful technology. Real-world impact.</p>
-            <p>Technology · Solutions · Growth</p>
+          </div>
+          <div>
+            <img
+              class="founder-photo"
+              src="/veloaxis-founder-anadi-philips-onyekachi.jpg"
+              alt="Anadi Philips Onyekachi, Founder and CEO of VeloAxis"
+              width="1439"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            >
           </div>
         </div>
       </div>
@@ -371,72 +398,4 @@
         <div class="cards">
           <article class="card">
             <span class="status">Future direction</span>
-            <h3>Business communication</h3>
-            <p>Helping businesses reach customers and maintain meaningful connections.</p>
-          </article>
-
-          <article class="card">
-            <span class="status">Future direction</span>
-            <h3>Business automation</h3>
-            <p>Reducing repetitive tasks and making everyday processes more efficient.</p>
-          </article>
-
-          <article class="card">
-            <span class="status">Future direction</span>
-            <h3>Social promotion</h3>
-            <p>Making it easier to prepare, organise and manage business content across supported platforms.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap">
-        <div class="contact-panel">
-          <div>
-            <h2>Let's move business forward.</h2>
-
-            <p>Interested in VeloAxis, our products or a potential partnership? We'd be glad to hear from you.</p>
-
-            <p class="contact-email">Email: <a href="mailto:velosmstexthub@gmail.com">velosmstexthub@gmail.com</a></p>
-          </div>
-
-          <div class="actions">
-            <a class="button" href="mailto:velosmstexthub@gmail.com">Contact VeloAxis ↗</a>
-
-            <a class="button secondary" href="https://velosmstexthub-prog.github.io/velocrm-app-/" target="_blank" rel="noopener noreferrer">Explore VeloCRM ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap foot">
-      <div>
-        <strong>VELOAXIS</strong>
-        <div>Useful technology. Real-world impact.</div>
-      </div>
-
-      <div>© <span id="year">2026</span> VeloAxis. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const navlinks = document.getElementById('navlinks');
-
-    menuBtn.addEventListener('click', () => {
-      const isOpen = navlinks.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navlinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    
